@@ -34,7 +34,7 @@ function setGameElements() {
         	resultsElem.style.display = 'block';
     	break;
     	case 'ended':
-        	newGameBtn.innerText = 'Jeszcze raz';
+        	newGameBtn.innerText = 'Play again';
     	case 'notStarted':
     	default:
         	newGameElem.style.display = 'block';
@@ -121,9 +121,11 @@ function setGamePoints() {
 function endGame() {
 	if (player.score == 10) {
 		gameState = 'ended';
+        setGameElements();
 		alert(player.name + ' You win!');
 	} else if (computer.score == 10) {
 		gameState = 'ended';
+        setGameElements();
 		alert('Computer win!');
 	}	
 }
