@@ -119,14 +119,14 @@ function playerPick(playerPick) {
         computerPickElem.innerHTML = computerPick;
 
         checkRoundWinner(playerPick, computerPick);
-    }
+}
     //update result
 function setGamePoints() {
         playerPointsElem.innerHTML = player.score;
         computerPointsElem.innerHTML = computer.score;
 
         endGame();
-    }
+}
     //end of the game
 function endGame() {
     if (player.score == 10) {
