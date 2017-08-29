@@ -1,5 +1,4 @@
 // scripts.js
-
 //button new game
 var newGameBtn = document.getElementById('js-newGameButton');
 
@@ -51,7 +50,7 @@ function setGameElements() {
             newGameElem.style.display = 'block';
             pickElem.style.display = 'none';
             resultsElem.style.display = 'none';
-            playerResultElem.innerHTML = ""; 
+            playerResultElem.innerHTML = "";
             computerResultElem.innerHTML = '';
             computerPickElem.innerHTML = 'Computer selection';
             playerPickElem.innerHTML = 'Player selection';
@@ -84,10 +83,10 @@ var x = Math.random();
 Math.floor(Math.random() * 3)
 
 function getComputerPick() {
-    var possiblePicks = ['rock', 'paper', 'scissors'];
-    return possiblePicks[Math.floor(Math.random() * 3)];
-}
-//awarding points
+        var possiblePicks = ['rock', 'paper', 'scissors'];
+        return possiblePicks[Math.floor(Math.random() * 3)];
+    }
+    //awarding points
 function checkRoundWinner(playerPick, computerPick) {
     playerResultElem.innerHTML = computerResultElem.innerHTML = '';
 
