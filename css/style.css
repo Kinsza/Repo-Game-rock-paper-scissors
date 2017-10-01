@@ -1,4 +1,24 @@
+body {
+	background-color: #f4e9d7;
+}
 .container {
 	padding: 20px;
 	margin-top: 15px;
+}
+.label {
+	font-size: 20px;
+	margin-left: 20px;
+	position: relative;
+	left: 290px;
+} 
+h1 {
+	padding-bottom: 30px;
+}
+button#js-newGameButton {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+.image {
+	padding: 50px 0 0 430px;
 }
